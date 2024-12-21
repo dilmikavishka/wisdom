@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.Controller.TeacherDetailController">
+   <children>
+      <ImageView fx:id="img8" fitHeight="774.0" fitWidth="1160.0" layoutX="-9.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/lum3n--RBuQ2PK_L8-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="-3.0" prefHeight="768.0" prefWidth="311.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <JFXButton layoutX="33.0" layoutY="41.0" onAction="#BtnAddTeachersOnAction" prefHeight="45.0" prefWidth="246.0" style="-fx-background-color: #fffdfd;" text="Add Teachers ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="33.0" layoutY="120.0" onAction="#BtnUpdateTeachersOnAction" prefHeight="45.0" prefWidth="246.0" style="-fx-background-color: #ffffff;" text="Update">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="33.0" layoutY="205.0" onAction="#BtnStudentSubjectOnAction" prefHeight="45.0" prefWidth="246.0" style="-fx-background-color: #ffffff;" text="Student Subject Details">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="33.0" layoutY="286.0" onAction="#BtnClassCapcityOnAction" prefHeight="45.0" prefWidth="246.0" style="-fx-background-color: #ffffff;" text="Class Capacity">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="33.0" layoutY="368.0" onAction="#BtnPaymentDetailsOnAction" prefHeight="45.0" prefWidth="246.0" style="-fx-background-color: #ffffff;" text="Payments">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="647.0" onAction="#BtnBackOnAction" prefHeight="36.0" prefWidth="96.0" text="back" />
+            <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="32.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-name.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="32.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-refresh.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="32.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-file.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="32.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-combo-chart%20(2).gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="32.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-us-dollar-circled%20(1).gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

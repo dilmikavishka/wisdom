@@ -1,0 +1,92 @@
+Create DATABASE wisdom;
+
+
+Use database Wisdom;
+
+
+
+
+Create Table User(
+	UserName VARCHAR(50)UNIQUE,
+	Password VARCHAR(50)
+
+);
+
+--------------------------------------------------------
+Create Table Student(
+	Student_Name VARCHAR(50),
+	Student_id   VARCHAR(50) PRIMARY KEY,
+	Stduetn_age  VARCHAR(50),
+	Contact      INT
+
+);
+--------------------------------------------------------
+
+Create Table Class(
+ 	Class_id VARCHAR(50)PRIMARY KEY,
+	Capcity  INT,
+	AC_OR_NON VARCHAR(50)
+);
+--------------------------------------------------------
+Create Table Class_Subject(
+	Class_id VARCHAR(50),
+	Subject_id VARCHAR(50),
+	CONSTRAINT FOREIGN KEY(Class_id) REFERENCES Class(Class_id),
+	CONSTRAINT FOREIGN KEY(Subject_id) REFERENCES Subject(Subject_id)
+);
+--------------------------------------------------------
+
+Create Table Subject(
+	Subject_id VARCHAR(50)PRIMARY KEY,
+	Books VARCHAR(50),
+	Semesters   VARCHAR(50)
+);
+--------------------------------------------------------
+Create Table Teacher(
+	Teacher_id VARCHAR(50)PRIMARY KEY,
+	Teacher_Name VARCHAR(50),
+	NIC   INT UNIQUE,
+	Age   INT
+);
+--------------------------------------------------------
+Create Table Subject_Teacher(
+	Subject_id VARCHAR(50),
+ 	Teacher_id VARCHAR(50),
+	CONSTRAINT FOREIGN KEY (Subject_id) REFERENCES Subject(Subject_id),
+        CONSTRAINT FOREIGN KEY (Teacher_id) REFERENCES Teacher(Teacher_id)
+);
+--------------------------------------------------------
+Create Table Extra_Class(
+	Extra_Class_Time VARCHAR(50),
+	Extra_Class_id   VARCHAR(50)PRIMARY KEY,
+	Extra_Class_Date DATE,
+	Subject_id VARCHAR(50)
+	CONSTRAINT FOREIGN KEY(Subject_id) REFERENCES Subject(Subject_id)
+
+);
+
+--------------------------------------------------------
+Create Table Payment(
+	Payment_id VARCHAR(50),
+	Payment_date DATE,
+	Payment_Time TIME,
+	Monthly_Payment VARCHAR(50),
+	Student_id   VARCHAR(50)
+	CONSTRAINT FOREIGN KEY(Student_id) REFERENCES Student(Student_id)
+
+);
+--------------------------------------------------------
+Create Table Employee(
+	Employee_id VARCHAR(50),
+	Employee_Name VARCHAR(50),
+	Employee_Contact VARCHAR(50)
+);
+---------------------------------------------------------
+CREATE TABLE Guardian(
+	Guardian_id VARCHAR(50) PRIMARY KEY,
+	Guardian_Contact INT,
+	Guardian_Name VARCHAR(50),
+	Guardian_NIC VARCHAR(50) NOT NULL,
+	Student_id VARCHAR(50),
+	CONSTRAINT FOREIGN KEY(Student_id) REFERENCES Student(Student_id)
+);

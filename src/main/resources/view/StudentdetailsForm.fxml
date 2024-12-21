@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="768.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.Controller.StudentDetailController">
+   <children>
+      <ImageView fx:id="img6" fitHeight="768.0" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/lum3n--RBuQ2PK_L8-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table_Students" layoutX="614.0" layoutY="1.0" prefHeight="444.0" prefWidth="510.0">
+        <columns>
+          <TableColumn fx:id="table_id" prefWidth="75.0" text="Id" />
+            <TableColumn fx:id="table_FirstName" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="tbl_LastName" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="tbl_UserName" prefWidth="75.0" text="User Name" />
+            <TableColumn fx:id="tblPass" prefWidth="75.0" text="Password" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="768.0" prefWidth="357.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <JFXButton layoutX="47.0" layoutY="66.0" onAction="#AddStudnetBtnOnAction" prefHeight="55.0" prefWidth="281.0" style="-fx-background-color: white;" text="Add Student" />
+            <JFXButton layoutX="47.0" layoutY="158.0" onAction="#UpdateStudentOnAction" prefHeight="55.0" prefWidth="281.0" style="-fx-background-color: white;" text="Update Student" />
+            <JFXButton layoutX="59.0" layoutY="248.0" onAction="#PaymentofStudentOnAction" prefHeight="55.0" prefWidth="269.0" style="-fx-background-color: white;" text="Student Payment" />
+            <JFXButton layoutX="47.0" layoutY="336.0" onAction="#RemoveofStudentOnAction" prefHeight="55.0" prefWidth="281.0" style="-fx-background-color: white;" text="Remove A Student" />
+            <JFXButton layoutX="10.0" layoutY="665.0" onAction="#BtnBack3OnAction" text="back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="48.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-user%20(2).gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="48.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-refresh.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="46.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-us-dollar-circled.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="46.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-remove.gif" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="47.0" layoutY="423.0" onAction="#SendMailOnAction" prefHeight="55.0" prefWidth="281.0" style="-fx-background-color: white;" text="Send Mail" />
+            <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="46.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-sent.gif" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="47.0" layoutY="510.0" onAction="#SendStudentReportOnAction" prefHeight="55.0" prefWidth="281.0" style="-fx-background-color: white;" text="Send Student Reports" />
+            <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="46.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-sent.gif" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="47.0" layoutY="587.0" onAction="#AddStudentwithPayment" prefHeight="55.0" prefWidth="281.0" style="-fx-background-color: white;" text="Add Student with payment" />
+            <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="46.0" layoutY="587.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-us-dollar-circled.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.Controller.Controller">
+   <children>
+      <ImageView fx:id="img1" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/lum3n--RBuQ2PK_L8-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="14.0" layoutY="214.0" onAction="#BtnLoginOnAction" style="-fx-background-color: #2323de;" text="Log In" />
+      <ImageView fitHeight="150.0" fitWidth="448.0" layoutX="14.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/315548453_664178255348201_8508955207624868447_n.png" />
+         </image>
+      </ImageView>
+   </children>
+
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1107.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.Controller.DashBoardFormController">
+   <children>
+      <ImageView fx:id="img2" fitHeight="768.0" fitWidth="1366.0" layoutX="-45.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/lum3n--RBuQ2PK_L8-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="760.0" prefWidth="315.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Label layoutX="97.0" layoutY="49.0" prefHeight="53.0" prefWidth="201.0" text="DashBoard">
+               <font>
+                  <Font name="Bookman Old Style Italic" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="52.0" layoutX="30.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/control-panel.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="31.0" layoutY="163.0" onAction="#BtnClassOnAction" prefHeight="45.0" prefWidth="221.0" style="-fx-background-color: white;" text="           Class Shedules">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="31.0" layoutY="238.0" onAction="#BtnStaffOnAction" prefHeight="45.0" prefWidth="221.0" style="-fx-background-color: white;" text="          Staff Shedules">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="31.0" layoutY="313.0" onAction="#BtnStudentOnAction" prefHeight="45.0" prefWidth="221.0" style="-fx-background-color: white;" text="            Student Details">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="31.0" layoutY="384.0" onAction="#BtnParentOnAction" prefHeight="45.0" prefWidth="221.0" style="-fx-background-color: white;" text="          Parent Details">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="31.0" layoutY="455.0" onAction="#BtnTeachersOnAction" prefHeight="45.0" prefWidth="221.0" style="-fx-background-color: white;" text="    Teachers ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="31.0" layoutY="526.0" onAction="#BtnPaymentsOnAction" prefHeight="45.0" prefWidth="221.0" style="-fx-background-color: white;" text="     Payments">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="30.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-combo-chart%20(2).gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="30.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-combo-chart%20(2).gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="30.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-user%20(1).gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="30.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-family%20(1).gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="30.0" layoutY="526.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-payment-processed%20(1).gif" />
+               </image>
+            </ImageView>
+            <JFXButton layoutY="632.0" onAction="#BtnBack1OnAction" text="back">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="30.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-name.gif" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <PieChart fx:id="Dashoard_Pie_Chart" layoutX="324.0" layoutY="14.0" prefHeight="425.0" prefWidth="488.0" />
+      <Label fx:id="lblDate" layoutX="849.0" layoutY="29.0" prefHeight="48.0" prefWidth="161.0" textFill="#d08787">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="849.0" layoutY="126.0" prefHeight="48.0" prefWidth="161.0">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

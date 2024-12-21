@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="456.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.Controller.AddStudentController">
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="688.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/lum3n--RBuQ2PK_L8-unsplashdisplay.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="FirstName" alignment="CENTER" labelFloat="true" layoutX="71.0" layoutY="26.0" promptText="First Name " />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="37.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-94.png" />
+         </image>
+      </ImageView>
+      <JFXPasswordField fx:id="txtPassword" alignment="CENTER" labelFloat="true" layoutX="277.0" layoutY="96.0" promptText="Password" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="246.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-94.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtLastName" alignment="CENTER" labelFloat="true" layoutX="277.0" layoutY="28.0" promptText="Last Name" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="246.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-lock-64.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" alignment="CENTER" labelFloat="true" layoutX="71.0" layoutY="96.0" promptText="User name" />
+      <JFXButton layoutX="360.0" layoutY="248.0" onAction="#SaveStudentOnAction" text="Save" />
+      <JFXButton fx:id="closebtn" layoutX="304.0" layoutY="248.0" onAction="#CloseBtnOnAction" text="Close" />
+      <JFXTextField fx:id="id" alignment="CENTER" labelFloat="true" layoutX="71.0" layoutY="152.0" promptText="ID" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="40.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-94.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

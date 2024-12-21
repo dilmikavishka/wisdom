@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="558.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.Controller.AddGuardianWithStudentController">
+   <children>
+      <ImageView fitHeight="558.0" fitWidth="913.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/lum3n--RBuQ2PK_L8-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="FirstName" alignment="CENTER" labelFloat="true" layoutX="81.0" layoutY="36.0" promptText="First Name " />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="47.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-94.png" />
+         </image>
+      </ImageView>
+      <JFXPasswordField fx:id="txtPassword" alignment="CENTER" labelFloat="true" layoutX="81.0" layoutY="290.0" promptText="Password" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="47.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-94.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtLastName" alignment="CENTER" labelFloat="true" layoutX="81.0" layoutY="225.0" promptText="Last Name" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="50.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-lock-64.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" alignment="CENTER" labelFloat="true" layoutX="81.0" layoutY="106.0" promptText="User name" />
+      <JFXTextField fx:id="id" alignment="CENTER" labelFloat="true" layoutX="81.0" layoutY="162.0" promptText="ID" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="50.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-94.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="545.0" layoutY="318.0" onAction="#SaveStudentAndGuardianOnAction" text="Save" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="47.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-94.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="GuardianFirstName" alignment="CENTER" labelFloat="true" layoutX="283.0" layoutY="37.0" promptText="First Name " />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="249.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-94.png" />
+         </image>
+      </ImageView>
+      <JFXPasswordField fx:id="GuardianPassword" alignment="CENTER" labelFloat="true" layoutX="489.0" layoutY="107.0" promptText="Password" />
+      <JFXTextField fx:id="GuaridanLastName" alignment="CENTER" labelFloat="true" layoutX="489.0" layoutY="39.0" promptText="Last Name" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="458.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-lock-64.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="GuaridanUSerName" alignment="CENTER" labelFloat="true" layoutX="283.0" layoutY="95.0" promptText="User name" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="458.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-94.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="closeBtn" layoutX="489.0" layoutY="204.0" onAction="#CloseBtnOnAction" text="Close" />
+      <JFXTextField fx:id="GuaridanId" alignment="CENTER" labelFloat="true" layoutX="283.0" layoutY="158.0" promptText="id" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="249.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-94.png" />
+         </image>
+      </ImageView>
+      <JFXPasswordField fx:id="GuardianNIc" alignment="CENTER" labelFloat="true" layoutX="489.0" layoutY="171.0" promptText="NIC" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="458.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-person-94.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="ComboStudent" layoutX="319.0" layoutY="229.0" promptText="Student ID" />
+      <AnchorPane layoutX="228.0" prefHeight="558.0" prefWidth="15.0" style="-fx-background-color: lightgrey;" />
+      <Label layoutX="63.0" layoutY="5.0" prefHeight="17.0" prefWidth="153.0">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="4.0" prefHeight="25.0" prefWidth="163.0" text="Guardian Form">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="4.0" prefHeight="25.0" prefWidth="163.0" text="Student Form">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

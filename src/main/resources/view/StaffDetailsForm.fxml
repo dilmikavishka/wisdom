@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.Controller.StaffDetailController">
+   <children>
+      <ImageView fx:id="img5" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/lum3n--RBuQ2PK_L8-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <BarChart fx:id="Chart1" layoutX="222.0" layoutY="-3.0" prefHeight="267.0" prefWidth="378.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis prefHeight="223.0" prefWidth="2.0" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <JFXButton layoutX="6.0" layoutY="361.0" onAction="#BtnBack2onAction" text="Back" />
+      <JFXButton layoutX="21.0" layoutY="31.0" onAction="#Generate_ReportOnAction" prefHeight="25.0" prefWidth="153.0" text="Generate User Report" />
+      <JFXButton layoutX="27.0" layoutY="76.0" onAction="#Generate_Student_ReportOnAction" prefHeight="25.0" prefWidth="153.0" text="Generate Student  Report" />
+   </children>
+</AnchorPane>
